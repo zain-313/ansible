@@ -1,0 +1,10 @@
+---
+- name: Set-up jenkins
+  hosts: servers
+  become: true
+  gather_facts: true
+---
+  tasks:   
+  - import_role:
+      name: jenkins
+...

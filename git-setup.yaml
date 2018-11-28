@@ -1,0 +1,9 @@
+---
+- hosts: servers
+  tasks:
+   - name: Set-up git
+     yum:
+       name: git
+       state: latest
+     become: true
+...
